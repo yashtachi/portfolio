@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#1a0f2e] text-white;
+  }
+}
+
+@layer components {
+  .magical-button {
+    @apply bg-[#2d1b4e] text-white px-6 py-3 rounded-lg hover:bg-[#1a0f2e] transition-colors duration-300 flex items-center space-x-2;
+  }
+}
+
+@layer utilities {
+  .animate-sparkle-float {
+    animation: sparkle-float 1s ease-in-out forwards;
+  }
+
+  .animate-wave {
+    animation: wave 2s ease-in-out infinite;
+  }
+
+  .animate-wave-reverse {
+    animation: wave 2s ease-in-out infinite reverse;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+}
+
+@keyframes sparkle-float {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
