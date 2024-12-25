@@ -12,3 +12,4 @@ export default defineConfig({
     port: 3000, // Optional: Set a specific port for local development
   },
 });
+
