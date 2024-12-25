@@ -1,4 +1,3 @@
-import React from 'react';
 import { Phone, Mail, Linkedin } from 'lucide-react';
 
 export default function Contact() {
@@ -9,7 +8,7 @@ export default function Contact() {
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center gap-3">
             <Phone className="text-yellow-400" />
-            <span className="text-white">+1 781-584-6771</span>
+            <span className="text-white">+91 7815846771</span>
           </div>
           <div className="flex items-center gap-3">
             <Mail className="text-yellow-400" />

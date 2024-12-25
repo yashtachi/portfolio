@@ -3,7 +3,7 @@ import { FileDown } from 'lucide-react';
 
 export default function Header() {
   const handleDownload = () => {
-    window.open('YOUR_RESUME_GOOGLE_DRIVE_LINK', '_blank');
+    window.open('https://drive.google.com/file/d/18ezNcxqnOoKnM8HHMZmJ089Nf6eaU1Bv/view?usp=sharing', '_blank');
   };
 
   const scrollToContact = () => {
@@ -17,7 +17,7 @@ export default function Header() {
           <a href="#about" className="text-white hover:text-yellow-400 transition-colors">About</a>
           <a href="#projects" className="text-white hover:text-yellow-400 transition-colors">Projects</a>
           <a href="#skills" className="text-white hover:text-yellow-400 transition-colors">Skills</a>
-          <button 
+          <button
             onClick={scrollToContact}
             className="text-white hover:text-yellow-400 transition-colors"
           >
