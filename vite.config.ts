@@ -9,7 +9,8 @@ export default defineConfig({
     assetsDir: 'assets', // Directory for static assets (JS/CSS/images)
   },
   server: {
-    port: 3000, // Optional: Set a specific port for local development
+    host: "127.0.0.1",
+    port: 8000, // Optional: Set a specific port for local development
   },
 });
 
